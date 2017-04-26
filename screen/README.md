@@ -4,6 +4,8 @@
 
 My screen configuration.
 
+![Screen](https://github.com/diarpi/my-configuration/blob/master/screen/screen.png)
+
 It will automatically start these three applications in separate tabs:
 * mutt (CLI email client)
 * weechat (CLI IRC client)
@@ -33,9 +35,24 @@ Place the provided .screen file to your home folder:
 $ cp .screenrc ~/
 ```
 
+## Example usage
+
 Running screen:
 ```
 $ screen
 ```
 
-
+Switching between tabs:
+```
+CTRL+a + <number>
+```
+Renaming a tab:
+```
+CTRL+a + A
+... new name
+```
+Kill a tab:
+```
+CTRL+a + k
+```
+Etc ...
