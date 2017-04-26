@@ -1,4 +1,5 @@
-# my-configuration
-Home for app specific configurations
+# My Configuration
 
-1.) screen
+Root directory for app specific configurations
+
+* screen
