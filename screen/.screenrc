@@ -1,0 +1,41 @@
+# Disable message on startup
+startup_message off
+
+# Automatically detach on hangup
+autodetach on
+
+# Default shell
+shell bash
+
+# 256 color
+term xterm-256color
+
+# Default encoding
+defutf8 on
+
+# Cache 25000 lines of scrollback
+defscrollback 25000
+
+# Disable visual/message bell
+vbell off
+bell_msg ""
+
+# Mouse scrollback
+termcapinfo xterm* ti@:te@
+
+# Mutt mail client transparency
+defbce on
+
+# Tabs
+screen -t mail 0 mutt	# http://www.mutt.org/
+screen -t irc 1	$HOME/screen/weechat.sh	# http://weechat.org/
+screen -t music 2 mpsyt	# https://github.com/mps-youtube/mps-youtube
+screen -t bash 3
+
+# Hardstatus tweaks
+hardstatus alwayslastline
+
+backtick 1 60 60 $HOME/screen/freemem.sh
+backtick 2 60 60 $HOME/screen/battery.sh
+
+hardstatus string "%{= Kd} %{= Kd}%-w%{= KG}[%{= KW}%n %t%{= KG}]%{= Kd}%+w %-= %{KR}%H%{KW} | %{KG}Free Memory:%{KW} %1`G | %{KG}Load Average:%{KW} %l | %{KG}Battery:%{KW} %2`%% | %D %d/%m/%Y %c"
